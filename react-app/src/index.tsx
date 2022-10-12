@@ -1,14 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './styles/style.css';
 import reportWebVitals from './reportWebVitals';
+import { BreakpointProvider } from 'react-socks';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import Formules from './pages/formules';
+import Contact from './pages/contact';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-  </React.StrictMode>
+  <BreakpointProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/formules" element={<Formules />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  </BreakpointProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
