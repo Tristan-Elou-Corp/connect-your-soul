@@ -91,7 +91,17 @@ function Home() {
         </h2>
         <p className="citation-7-1-wrapper">
           <span className="citation-7-1">
-            
+            La liberté n’est vraie que lorsque vous avez la paix au fond de votre cœur comme un moteur puissant qui accepte les obstacles et l’adversité de la vie.
+          </span>
+        </p>
+        <p className="citation-7-2-wrapper">
+          <span className="citation-7-2">
+            Si vous pensez détenir la vérité, les connaissances, la sagesse ou la puissance ; si vous manquez de reconnaissance, notoriété ou d’influence… Alors mon coaching est pour vous, je vous accompagnerai dans votre quotidien, dans le partage et la
+          </span>
+        </p>
+        <p className="citation-7-3-wrapper">
+          <span className="citation-7-3">
+            bienveillance pour transcender votre For intérieur afin qu’il rayonne vers le For extérieur.
           </span>
         </p>
       </div>
