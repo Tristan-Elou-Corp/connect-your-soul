@@ -88,21 +88,18 @@
   }
 
   &__square {
-
     &__block {
       box-shadow: 0 0 10px 5px whitesmoke;
 
       &__content {
-
         &__text {
           text-align: center;
-          
+        
           &__title {
             font-size: 21px;
             color: $color-title;
             font-family: "Poppins";
           }
-
         }
         &__paragraph {
           text-align: center;
