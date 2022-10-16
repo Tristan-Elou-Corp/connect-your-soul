@@ -2,6 +2,22 @@ import React from "react";
 import Header from "../components/header";
 import "../scss/home.scss";
 import oiseaucage from "../assets/oiseau-cage.webp";
+import puzzlepiece from "../assets/puzzlepiece.png"
+import tete from "../assets/tete.png"
+import key from "../assets/key.png"
+import key2 from "../assets/key2.webp"
+import Button from '@mui/material/Button';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import journey from "../assets/letsstartyourjourney.webp";
+import stairs from "../assets/stairs.webp";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#1d4851',
+    },
+  },
+});
 
 function Home() {
   return (
@@ -105,7 +121,85 @@ function Home() {
           </span>
         </p>
       </div>
+      <div className="three-square-wrapper">
+        <div className="first-square-wrapper">
+          <div className="first-square">
+            <img src={puzzlepiece} alt="puzzlepiece" />
+            <h3 className="first-square-title-wrapper">
+              <span className="first-square-title">
+                Adaptabilité
+              </span>
+            </h3>
+            <p className="first-square-paragraph-wrapper">
+              <span className="first-square-paragraph">
+                Services uniquement sur-mesure en fonction de la personne, je vous offre un accompagnement entièrement personnalisé.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className="second-square-wrapper">
+          <div className="second-square">
+            <img src={tete} alt="tete" />
+            <h3 className="second-square-title-wrapper">
+              <span className="second-square-title">
+                Approche Holistique
+              </span>
+            </h3>
+            <p className="second-square-paragraph-wrapper">
+              <span className="second-square-paragraph">
+                Combinaison de tous vos besoins, mon approche est à la fois professionnelle et personnelle.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className="third-square-wrapper">
+          <div className="third-square">
+            <img src={key} alt="key" />
+            <h3 className="third-square-title-wrapper">
+              <span className="third-square-title">
+                Approche dynamique
+              </span>
+            </h3>
+            <p className="third-square-paragraph-wrapper">
+              <span className="third-square-paragraph">
+                Mon approche amène une vraie profondeur et une vision 360 de la situation, elle prend en compte l'environnement dans lequel nous sommes.
+              </span>
+            </p>
+            </div>
+        </div>
+        <p className="citation-8-1-wrapper">
+          <span className="citation-8-1">
+            Je vous accompagne avec une grande écoute pour avancer sur votre chemin.
+          </span>
+        </p>
+        <p className="citation-8-2-wrapper">
+          <span className="citation-8-2">
+          Le hasard n'éxiste pas... notre rencontre est forcément programmée...
+          </span>
+        </p>
+        <div className="bottom-part">
+          <div className="career-img-wrapper">
+            <a href="/formules" className="career-img-a">
+              <img src={key2} alt="career" className="career-img"/>
+            </a>
+          </div>
+          <ThemeProvider theme={theme}>
+            <Button variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small">Mes formules et Accompagnements</Button>
+          </ThemeProvider>
+          <div className="journey-img-wraper">
+            <a href="/contact" className="journey-img-a">
+              <img src={journey} alt="journey" className="journey-img"/>
+            </a>
+          </div>
+          <ThemeProvider theme={theme}>
+            <Button variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small" >Ils m'ont fait confiance</Button>
+          </ThemeProvider>
+          <div className="stairs-img-wraper">
+            <img src={stairs} alt="stairs" className="stairs-img"/>
+          </div>
+        </div>
     </div>
+  </div>
   );
 }
 
