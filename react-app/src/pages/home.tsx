@@ -120,59 +120,61 @@ function Home() {
           </span>
         </p>
       </div>
-      <div className="home-wrapper__square">
-        <div className="first-square-wrapper">
-          <div className="first-square">
+      <section className="home-wrapper__square">
+        <div className="home-wrapper__square__block">
+          <div className="home-wrapper__square__block__content">
             <img src={puzzlepiece} alt="puzzlepiece" />
-            <h3 className="first-square-title-wrapper">
-              <span className="first-square-title">
+            <h3 className="home-wrapper__square__block__content__text">
+              <span className="home-wrapper__square__block__content__text__title">
                 Adaptabilité
               </span>
             </h3>
-            <p className="first-square-paragraph-wrapper">
-              <span className="first-square-paragraph">
+            <p className="home-wrapper__square__block__content__paragraph">
+              <span className="home-wrapper__square__block__content__paragraph__text">
                 Services uniquement sur-mesure en fonction de la personne, je vous offre un accompagnement entièrement personnalisé.
               </span>
             </p>
           </div>
         </div>
-        <div className="second-square-wrapper">
-          <div className="second-square">
+        <div className="home-wrapper__square">
+          <div className="home-wrapper__square__block">
             <img src={tete} alt="tete" />
-            <h3 className="second-square-title-wrapper">
-              <span className="second-square-title">
+            <h3 className="home-wrapper__square__block__content__text">
+              <span className="home-wrapper__square__block__content__text__title">
                 Approche Holistique
               </span>
             </h3>
-            <p className="second-square-paragraph-wrapper">
-              <span className="second-square-paragraph">
+            <p className="home-wrapper__square__block__content__paragraph">
+              <span className="home-wrapper__square__block__content__paragraph__text">
                 Combinaison de tous vos besoins, mon approche est à la fois professionnelle et personnelle.
               </span>
             </p>
           </div>
         </div>
-        <div className="third-square-wrapper">
-          <div className="third-square">
+        <div className="home-wrapper__square">
+          <div className="home-wrapper__square__block">
             <img src={key} alt="key" />
-            <h3 className="third-square-title-wrapper">
-              <span className="third-square-title">
+            <h3 className="home-wrapper__square__block__content__text">
+              <span className="home-wrapper__square__block__content__text__title">
                 Approche dynamique
               </span>
             </h3>
-            <p className="third-square-paragraph-wrapper">
-              <span className="third-square-paragraph">
+            <p className="home-wrapper__square__block__content__paragraph">
+              <span className="home-wrapper__square__block__content__paragraph__text">
                 Mon approche amène une vraie profondeur et une vision 360 de la situation, elle prend en compte l'environnement dans lequel nous sommes.
               </span>
             </p>
-            </div>
+          </div>
         </div>
-        <p className="citation-8-1-wrapper">
-          <span className="citation-8-1">
+      </section>
+      <section className="home-wrapper__bottom">
+        <p className="home-wrapper__bottom__citation">
+          <span className="home-wrapper__bottom__citation__text">
             Je vous accompagne avec une grande écoute pour avancer sur votre chemin.
           </span>
         </p>
-        <p className="citation-8-2-wrapper">
-          <span className="citation-8-2">
+        <p className="home-wrapper__bottom__citation">
+          <span className="home-wrapper__bottom__citation__text">
           Le hasard n'éxiste pas... notre rencontre est forcément programmée...
           </span>
         </p>
@@ -197,7 +199,7 @@ function Home() {
             <img src={stairs} alt="stairs" className="stairs-img"/>
           </div>
         </div>
-    </div>
+      </section>
   </div>
   );
 }

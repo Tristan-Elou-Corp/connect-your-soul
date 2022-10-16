@@ -88,112 +88,51 @@
   }
 
   &__square {
-    
+
+    &__block {
+      box-shadow: 0 0 10px 5px whitesmoke;
+
+      &__content {
+
+        &__text {
+          text-align: center;
+          
+          &__title {
+            font-size: 21px;
+            color: $color-title;
+            font-family: "Poppins";
+          }
+
+        }
+        &__paragraph {
+          text-align: center;
+
+          &__text {
+            color: #373737;
+            font-size: 16px;
+            font-family: "Noto Sans";
+            font-weight: 400;
+            line-height: 2;
+          }
+        }
+      }
+    }
   }
-}
 
-.first-square-wrapper {
-  box-shadow: 0 0 10px 5px whitesmoke;
-}
+  &__bottom {
+    &__citation {
+      text-align: center;
+      display: block;
 
-.first-square-title-wrapper {
-  text-align: center;
-}
-
-.first-square-title {
-  font-size: 21px;
-  color: $color-title;
-  font-family: "Poppins";
-}
-
-.first-square-paragraph-wrapper {
-  text-align: center;
-}
-
-.first-square-paragraph {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.second-square-wrapper {
-  box-shadow: 0 0 10px 5px whitesmoke;
-}
-
-.second-square-title-wrapper {
-  text-align: center;
-}
-
-.second-square-title {
-  font-size: 21px;
-  color: $color-title;
-  font-family: "Poppins";
-}
-
-.second-square-paragraph-wrapper {
-  text-align: center;
-}
-
-.second-square-paragraph {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.third-square-wrapper {
-  box-shadow: 0 0 10px 5px whitesmoke;
-}
-
-.third-square-title-wrapper {
-  text-align: center;
-}
-
-.third-square-title {
-  font-size: 21px;
-  color: $color-title;
-  font-family: "Poppins";
-}
-
-.third-square-paragraph-wrapper {
-  text-align: center;
-}
-
-.third-square-paragraph {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.citation-8-1-wrapper {
-  text-align: center;
-  display: block;
-}
-
-.citation-8-1 {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.citation-8-2-wrapper {
-  text-align: center;
-  display: block;
-}
-
-.citation-8-2 {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
+      &__text {
+        color: #373737;
+        font-size: 16px;
+        font-family: "Noto Sans";
+        font-weight: 400;
+        line-height: 2;
+      }
+    }
+  }
 }
 
 .career-img {
