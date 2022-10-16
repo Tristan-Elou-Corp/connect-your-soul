@@ -178,25 +178,27 @@ function Home() {
           Le hasard n'éxiste pas... notre rencontre est forcément programmée...
           </span>
         </p>
-        <div className="bottom-part">
-          <div className="career-img-wrapper">
-            <a href="/formules" className="career-img-a">
-              <img src={key2} alt="career" className="career-img"/>
+        <div className="home-wrapper__bottom__formula">
+          <div className="home-wrapper__bottom__formula__block">
+            <a href="/formules">
+              <img src={key2} alt="career"/>
             </a>
           </div>
-          <ThemeProvider theme={theme}>
+          {/*<ThemeProvider theme={theme}>
             <Button variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small">Mes formules et Accompagnements</Button>
-          </ThemeProvider>
-          <div className="journey-img-wraper">
-            <a href="/contact" className="journey-img-a">
-              <img src={journey} alt="journey" className="journey-img"/>
+  </ThemeProvider>*/}
+          <div className="home-wrapper__bottom__formula__block">
+            <a href="/contact">
+              <img src={journey} alt="journey"/>
             </a>
           </div>
-          <ThemeProvider theme={theme}>
+          {/*<ThemeProvider theme={theme}>
             <Button variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small" >Ils m'ont fait confiance</Button>
-          </ThemeProvider>
-          <div className="stairs-img-wraper">
-            <img src={stairs} alt="stairs" className="stairs-img"/>
+</ThemeProvider>*/}
+          <div className="home-wrapper__bottom__formula__block">
+            <a href="/">
+              <img src={stairs} alt="stairs"/>
+            </a>
           </div>
         </div>
       </section>
