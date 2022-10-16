@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../components/header";
-import "../scss/home.scss";
 import oiseaucage from "../assets/oiseau-cage.webp";
 import puzzlepiece from "../assets/puzzlepiece.png"
 import tete from "../assets/tete.png"
