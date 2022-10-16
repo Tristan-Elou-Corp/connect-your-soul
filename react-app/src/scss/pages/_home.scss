@@ -1,186 +1,95 @@
 .home-wrapper {
   text-align: center;
-}
 
-.citation-wrapper {
-  background-image: $background-image;
-  background-size: 100%;
-  text-align: center;
-}
+  &__citation-wrapper {
+    background-image: $background-image;
+    background-size: 100%;
+    text-align: center;
 
-.citation-1 {
-  color: #1D4851;
-  font-size: 24px;
-  font-family: "Poppins";
-}
+    &__citation {
+      color: $color-title;
+      font-size: 24px;
+      font-family: "Poppins";
+    }
+  }
 
-.citation-2 {
-  font-size: 24px;
-  font-family: "Poppins";
-  color: #1D4851;
-}
+  &__oiseaucage {
+    opacity: 1;
+    width: 100%;
+    background-position: center center;
+  }
+  &__citation {
+    transition: none 0s ease 0s;
+    text-align: left;
+    display: block;
 
-.oiseaucage {
-  opacity: 1;
-  width: 100%;
-  background-position: center center;
-}
+    &__text {
+      border: 0 solid #333;
+      font-size: 13px;
+      font-weight: bold;
+      font-family: "Dancing Script";
+      display: initial;
+      font-style: italic;
+    }
 
-.citation-3-wrapper {
-  transition: none 0s ease 0s;
-  text-align: left;
-  display: block;
-}
+    &--normal {
+      text-align: left;
+      display: block;
 
-.citation-3 {
-  border: 0 solid #333;
-  font-size: 13px;
-  font-weight: bold;
-  font-family: "Dancing Script";
-  display: initial;
-  font-style: italic;
-}
+      &__text {
+        color: #373737;
+        font-size: 16px;
+        font-family: "Noto Sans";
+        font-weight: 400;
+        line-height: 2;
+      }
+    }
+    
+    &--background {
+      background-image: $background-image-2;
+      
+      &__title_block {
+        font-size: 24px;
+        color: $color-title;
+        font-family: "Poppins";
+      }
+      &__title {
+        text-align: center;
+        display: block;
+      }
 
-.title-1 {
-  color: #1D4851;
-  font-size: 16px;
-  font-family: "Poppins";
-  font-weight: 700;
-}
+      &__citation {
+        &__text {
+          color: #373737;
+          font-size: 16px;
+          font-family: "Noto Sans";
+          font-weight: 400;
+          line-height: 2;
+        }
+      }
+    }
+  }
 
-.citation-4-1 {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
+  &__citation_title {
+    &__title {
+      color: $color-title;
+      font-size: 16px;
+      font-family: "Poppins";
+      font-weight: 700;
+    }
+  }
 
-.citation-4-1-wrapper {
-  text-align: left;
-  display: block;
-}
+  &__list {
+    color: #373737;
+    font-size: 16px;
+    font-family: "Noto Sans";
+    font-weight: 400;
+    line-height: 2;
+  }
 
-.citation-4-2 {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.citation-4-2-wrapper {
-  text-align: left;
-  display: block;
-}
-
-.citation-4-3 {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.citation-4-3-wrapper {
-  text-align: left;
-  display: block;
-}
-
-.citation-4-4 {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.citation-4-4-wrapper {
-  text-align: left;
-  display: block;
-}
-
-.list {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.citation-5-wrapper {
-  text-align: left;
-  display: block;
-}
-
-.citation-5 {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.citation-6-wrapper {
-  text-align: left;
-  display: block;
-}
-
-.citation-6 {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.citation-7-div-wrapper {
-  background-image: $background-image-2;
-}
-
-.citation-7-title-wrapper {
-  font-size: 24px;
-  color: #1D4851;
-  font-family: "Poppins";
-}
-
-.citation-7-1-wrapper {
-  text-align: center;
-  display: block;
-}
-
-.citation-7-1 {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.citation-7-2-wrapper {
-  text-align: center;
-  display: block;
-}
-
-.citation-7-2 {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
-}
-
-.citation-7-3-wrapper {
-  text-align: center;
-  display: block;
-}
-
-.citation-7-3 {
-  color: #373737;
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 400;
-  line-height: 2;
+  &__square {
+    
+  }
 }
 
 .first-square-wrapper {
@@ -193,7 +102,7 @@
 
 .first-square-title {
   font-size: 21px;
-  color: #1D4851;
+  color: $color-title;
   font-family: "Poppins";
 }
 
@@ -219,7 +128,7 @@
 
 .second-square-title {
   font-size: 21px;
-  color: #1D4851;
+  color: $color-title;
   font-family: "Poppins";
 }
 
@@ -245,7 +154,7 @@
 
 .third-square-title {
   font-size: 21px;
-  color: #1D4851;
+  color: $color-title;
   font-family: "Poppins";
 }
 
