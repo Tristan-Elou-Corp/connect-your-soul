@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import journey from "../assets/letsstartyourjourney.webp";
 import stairs from "../assets/stairs.webp";
+import EmailBox from "../components/EmailBox";
 
 const theme = createTheme({
   palette: {
@@ -185,7 +186,7 @@ function Home() {
             </a>
           </div>
           <ThemeProvider theme={theme}>
-            <Button variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small">Mes formules et Accompagnements</Button>
+            <Button fullWidth variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small">Mes formules et Accompagnements</Button>
           </ThemeProvider>
           <div className="journey-img-wraper">
             <a href="/contact" className="journey-img-a">
@@ -193,12 +194,13 @@ function Home() {
             </a>
           </div>
           <ThemeProvider theme={theme}>
-            <Button variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small" >Ils m'ont fait confiance</Button>
+            <Button fullWidth variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small" >Ils m'ont fait confiance</Button>
           </ThemeProvider>
           <div className="stairs-img-wraper">
             <img src={stairs} alt="stairs" className="stairs-img"/>
           </div>
         </div>
+        <EmailBox />
       </section>
   </div>
   );
