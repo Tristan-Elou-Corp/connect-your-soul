@@ -31,8 +31,9 @@ function EmailBox() {
   };
 
   return (
-    <div>
-      <h2 className="emailbox-title">Vous souhaitez bénéficier de mon accompagnement ?</h2>
+    <div style={{ textAlign: "center" }}>
+      <h2 className="emailbox-title">Vous souhaitez bénéficier de mon accompagnement ? Envoyer moi un mail ci-dessous ou à cette adresse : </h2>
+      <p className="emailbox-title-mail">contact@connect-your-soul.com</p>
       <TextField
         fullWidth
         size="small"
@@ -49,7 +50,7 @@ function EmailBox() {
           rows={4}
           onChange={handleChangeContent}
       />
-      <Button variant="contained" color="primary" onClick={() => handleSend()} size="small" >Envoyer</Button>
+      <Button variant="contained" fullWidth color="primary" onClick={() => handleSend()} size="small" >Envoyer</Button>
     </div>
   );
 }
