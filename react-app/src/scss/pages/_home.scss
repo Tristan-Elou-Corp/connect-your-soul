@@ -148,4 +148,21 @@
       }
     }
   }
+
+  &__footer {
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      a {
+        img {
+          width: 25%;
+          height: 25%;
+        }
+      }
+    }
+  }
 }
+

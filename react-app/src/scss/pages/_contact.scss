@@ -1,0 +1,39 @@
+.contact-wrapper {
+  &__journey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    &__block {
+      display: block;
+      a {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &__text-trust {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #1d4851;
+    height: 150px;
+    &__span {
+      font-weight: 700;
+      color: white;
+      font-size: 22px;
+      font-family: "Poppins";
+    }
+  }
+
+  &__accordions-wrapper {
+    background-image: $background-image-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

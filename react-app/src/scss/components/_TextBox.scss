@@ -1,0 +1,28 @@
+.square {
+    &__block {
+      box-shadow: 0 0 10px 10px whitesmoke;
+
+      &__content {
+        &__text {
+          text-align: center;
+
+          &__title {
+            font-size: 21px;
+            color: $color-title;
+            font-family: "Poppins";
+          }
+        }
+        &__paragraph {
+          text-align: center;
+
+          &__text {
+            color: #373737;
+            font-size: 16px;
+            font-family: "Noto Sans";
+            font-weight: 400;
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }
