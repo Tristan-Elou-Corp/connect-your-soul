@@ -10,6 +10,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import journey from "../assets/letsstartyourjourney.webp";
 import stairs from "../assets/stairs.webp";
 import EmailBox from "../components/EmailBox";
+import cyslogo from "../assets/cys-logo.png"
+import TextBox from "../components/TextBox";
 
 const theme = createTheme({
   palette: {
@@ -122,51 +124,9 @@ function Home() {
         </p>
       </div>
       <section className="home-wrapper__square">
-        <div className="home-wrapper__square__block">
-          <div className="home-wrapper__square__block__content">
-            <img src={puzzlepiece} alt="puzzlepiece" />
-            <h3 className="home-wrapper__square__block__content__text">
-              <span className="home-wrapper__square__block__content__text__title">
-                Adaptabilité
-              </span>
-            </h3>
-            <p className="home-wrapper__square__block__content__paragraph">
-              <span className="home-wrapper__square__block__content__paragraph__text">
-                Services uniquement sur-mesure en fonction de la personne, je vous offre un accompagnement entièrement personnalisé.
-              </span>
-            </p>
-          </div>
-        </div>
-        <div className="home-wrapper__square">
-          <div className="home-wrapper__square__block">
-            <img src={tete} alt="tete" />
-            <h3 className="home-wrapper__square__block__content__text">
-              <span className="home-wrapper__square__block__content__text__title">
-                Approche Holistique
-              </span>
-            </h3>
-            <p className="home-wrapper__square__block__content__paragraph">
-              <span className="home-wrapper__square__block__content__paragraph__text">
-                Combinaison de tous vos besoins, mon approche est à la fois professionnelle et personnelle.
-              </span>
-            </p>
-          </div>
-        </div>
-        <div className="home-wrapper__square">
-          <div className="home-wrapper__square__block">
-            <img src={key} alt="key" />
-            <h3 className="home-wrapper__square__block__content__text">
-              <span className="home-wrapper__square__block__content__text__title">
-                Approche dynamique
-              </span>
-            </h3>
-            <p className="home-wrapper__square__block__content__paragraph">
-              <span className="home-wrapper__square__block__content__paragraph__text">
-                Mon approche amène une vraie profondeur et une vision 360 de la situation, elle prend en compte l'environnement dans lequel nous sommes.
-              </span>
-            </p>
-          </div>
-        </div>
+        <TextBox img={puzzlepiece} title="Adaptabilité" text="Services uniquement sur-mesure en fonction de la personne, je vous offre un accompagnement entièrement personnalisé." />
+        <TextBox img={tete} title="Approche Holistique" text="Combinaison de tous vos besoins, mon approche est à la fois professionnelle et personnelle." />
+        <TextBox img={key} title="Approche Dynamique" text="Mon approche amène une vraie profondeur et une vision 360 de la situation, elle prend en compte l'environnement dans lequel nous sommes." />
       </section>
       <section className="home-wrapper__bottom">
         <p className="home-wrapper__bottom__citation">
@@ -219,6 +179,20 @@ function Home() {
           </div>
         </div>
         <EmailBox />
+      </section>
+      <section className="home-wrapper__footer">
+        <div className="home-wrapper__footer__logo">
+          <a href="/">
+            <img src={cyslogo} alt="logo" style={{ width: "40%", marginTop: 50 }} />
+          </a>
+        </div>
+        <div className="home-wrapper__footer__legal">
+          <a href="/mentions-legales" style={{ textDecoration: "none" }}>
+            <span style={{ fontFamily: "Poppins"}}>
+              Mentions légales
+            </span>
+          </a>
+        </div>
       </section>
   </div>
   );
