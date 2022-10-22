@@ -1,8 +1,11 @@
 .header {
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
   top: 0;
+  margin-bottom: 10px;
+  border-top: 8px solid white;
   position: sticky;
   background-color: white;
 }
