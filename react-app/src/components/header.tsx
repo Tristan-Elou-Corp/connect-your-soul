@@ -5,7 +5,9 @@ import BasicMenu from "./BasicMenu";
 function Header() {
   return (
     <header className="header">
-      <img src={cyslogo} alt="" />
+      <a href="/" className="header__logo">
+        <img src={cyslogo} alt="" />
+      </a>
       <BasicMenu />
     </header>
   );
