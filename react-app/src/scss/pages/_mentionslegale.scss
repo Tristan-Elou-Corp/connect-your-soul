@@ -1,0 +1,29 @@
+.ml-wrapper {
+  &__title {
+    text-align: center;
+    &__text {
+      font-size: 24px;
+      color: $color-title;
+      font-family: "Poppins";
+    }
+  }
+
+  &__content {
+    &__text {
+      text-align: left;
+      &__paragraph {
+        font-size: 16px;
+        color: #373737;
+        font-family: "Noto Sans";
+      }
+    }
+    &__title {
+      text-align: left;
+      &__content {
+        font-size: 20px;
+        color: #245A65;
+        font-family: "Poppins";
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Formules from './pages/formules';
 import Contact from './pages/contact';
+import MentionsLegale from './pages/mentionslegale';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,6 +19,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/formules" element={<Formules />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path='/mentions-legales' element={<MentionsLegale />} />
       </Routes>
     </BrowserRouter>
   </BreakpointProvider>
