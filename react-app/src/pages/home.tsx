@@ -4,7 +4,6 @@ import oiseaucage from "../assets/oiseau-cage.webp";
 import puzzlepiece from "../assets/puzzlepiece.png"
 import tete from "../assets/tete.png"
 import key from "../assets/key.png"
-import key2 from "../assets/key2.webp"
 import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import journey from "../assets/letsstartyourjourney.webp";
