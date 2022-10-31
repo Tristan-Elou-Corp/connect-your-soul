@@ -8,7 +8,6 @@ import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import journey from "../assets/letsstartyourjourney.webp";
 import stairs from "../assets/stairs.webp";
-import EmailBox from "../components/EmailBox";
 import cyslogo from "../assets/cys-logo.png"
 import TextBox from "../components/TextBox";
 
@@ -161,9 +160,18 @@ function Home() {
               </a>
             </div>
           </div>
-          <EmailBox />
+          <ThemeProvider theme={theme}>
+            {/*
+            ----------------------------------------
+
+                          email icon
+
+            ----------------------------------------
+            */}
+              <Button id="email-button" fullWidth variant="contained" color="primary" onClick={() => window.location.href="/contact"} size="small" >Email</Button>
+            </ThemeProvider>
         </section>
-        <section className="home-wrapper__footer">
+        <footer className="home-wrapper__footer">
           <div className="home-wrapper__footer__logo">
             <a href="/">
               <img src={cyslogo} alt="logo" style={{ width: "40%", marginTop: 50 }} />
@@ -176,7 +184,7 @@ function Home() {
               </span>
             </a>
           </div>
-        </section>
+        </footer>
     </div>
   </React.Fragment>
   );
