@@ -27,18 +27,17 @@ function Home() {
       <div className="home-wrapper">
         <div className="home-wrapper__citation-wrapper">
           <h2 className="home-wrapper__citation-wrapper__citation">
-            Un accompagnement personnel,
-          </h2>
-          <h2 className="home-wrapper__citation-wrapper__citation">
-            intégratif et holistique
+            Un accompagnement personnel, intégratif et holistique
           </h2>
         </div>
-        <img src={oiseaucage} alt="oiseaucage" className="home-wrapper__oiseaucage"/>
-        <p className="home-wrapper__citation">
-          <span className="home-wrapper__citation__text">
-            J’ai tenté de faire comme ce colibri : sortir de cette cage pour comprendre ce qu’est la liberté pour être en paix, vivre en paix. Mais je me suis heurtée à de nombreux obstacles qui me ramenaient à ma réalité : nous ne pouvons pas vivre déconnectés de notre environnement… Alors comment exprimer sa singularité et sa liberté dans ce monde régi par des codes et enfermé dans un cadre ?
-          </span>
-        </p>
+        <div className="home-wrapper__citation-image">
+          <img src={oiseaucage} alt="oiseaucage" className="home-wrapper__citation-image__oiseaucage"/>
+          <p className="home-wrapper__citation-image__citation">
+            <span className="home-wrapper__citation-image__citation__text">
+              J’ai tenté de faire comme ce colibri : sortir de cette cage pour comprendre ce qu’est la liberté pour être en paix, vivre en paix. Mais je me suis heurtée à de nombreux obstacles qui me ramenaient à ma réalité : nous ne pouvons pas vivre déconnectés de notre environnement… Alors comment exprimer sa singularité et sa liberté dans ce monde régi par des codes et enfermé dans un cadre ?
+            </span>
+          </p>
+        </div>
         <p className="home-wrapper__citation_title">
           <span className="home-wrapper__citation_title__title">
             Ma vision du changement de paradigmes pour demain
