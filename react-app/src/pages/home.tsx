@@ -10,6 +10,7 @@ import journey from "../assets/letsstartyourjourney.webp";
 import stairs from "../assets/stairs.webp";
 import cyslogo from "../assets/cys-logo.png"
 import TextBox from "../components/TextBox";
+import EmailIcon from '@mui/icons-material/Email';
 
 const theme = createTheme({
   palette: {
@@ -168,7 +169,10 @@ function Home() {
 
             ----------------------------------------
             */}
-              <Button id="email-button" fullWidth variant="contained" color="primary" onClick={() => window.location.href="/contact"} size="small" >Email</Button>
+              <Button id="email-button" fullWidth variant="contained" color="primary" onClick={() => window.location.href="/contact"} size="small" >
+              <EmailIcon />
+                Email
+                </Button>
             </ThemeProvider>
         </section>
         <footer className="home-wrapper__footer">
