@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import oiseaucage from "../assets/oiseau-cage.webp";
 import puzzlepiece from "../assets/puzzlepiece.png"
 import tete from "../assets/tete.png"
@@ -8,7 +9,6 @@ import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import journey from "../assets/letsstartyourjourney.webp";
 import stairs from "../assets/stairs.webp";
-import cyslogo from "../assets/cys-logo.png"
 import TextBox from "../components/TextBox";
 import EmailIcon from '@mui/icons-material/Email';
 
@@ -162,33 +162,13 @@ function Home() {
             </div>
           </div>
           <ThemeProvider theme={theme}>
-            {/*
-            ----------------------------------------
-
-                          email icon
-
-            ----------------------------------------
-            */}
-              <Button id="email-button" fullWidth variant="contained" color="primary" onClick={() => window.location.href="/contact"} size="small" >
+            <Button id="email-button" fullWidth variant="contained" color="primary" onClick={() => window.location.href="/contact"} size="small" >
               <EmailIcon />
-                Email
-                </Button>
-            </ThemeProvider>
+              Email
+            </Button>
+          </ThemeProvider>
         </section>
-        <footer className="home-wrapper__footer">
-          <div className="home-wrapper__footer__logo">
-            <a href="/">
-              <img src={cyslogo} alt="logo" style={{ width: "40%", marginTop: 50 }} />
-            </a>
-          </div>
-          <div className="home-wrapper__footer__legal">
-            <a href="/mentions-legales" style={{ textDecoration: "none" }}>
-              <span style={{ fontFamily: "Poppins"}}>
-                Mentions légales
-              </span>
-            </a>
-          </div>
-        </footer>
+        <Footer />
     </div>
   </React.Fragment>
   );

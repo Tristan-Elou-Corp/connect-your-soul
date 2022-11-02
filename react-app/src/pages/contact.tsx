@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import journey from "../assets/letsstartyourjourney.webp"
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -7,7 +8,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import EmailBox from "../components/EmailBox";
-import cyslogo from "../assets/cys-logo.png"
 
 function Contact() {
   return (
@@ -104,20 +104,7 @@ function Contact() {
       </div>
       <div>
         <EmailBox />
-        <section className="formules-wrapper__footer">
-          <div className="formules-wrapper__footer__logo">
-            <a href="/">
-              <img src={cyslogo} alt="logo" />
-            </a>
-          </div>
-          <div className="formules-wrapper__footer__legal">
-            <a href="/mentions-legales" style={{ textDecoration: "none" }}>
-              <span style={{ fontFamily: "Poppins"}}>
-                Mentions légales
-              </span>
-            </a>
-          </div>
-        </section>
+        <Footer />
       </div>
     </div>
   );
