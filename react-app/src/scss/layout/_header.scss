@@ -24,11 +24,14 @@
     display: none;
     align-items: flex-end;
     font-family: "Poppins";
-    width: 20%;
+    width: 15%;
     gap: 20px;
     
     a {
       text-decoration: none;
+      &:hover {
+        font-weight: bold;
+      }
     }
     
     @media screen and (min-width: 1025px) {

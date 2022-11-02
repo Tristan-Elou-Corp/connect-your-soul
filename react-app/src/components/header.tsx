@@ -12,9 +12,9 @@ function Header() {
         <BasicMenu />
       </div>
       <nav>
-        <a href="/">Accueil</a>
-        <a href="/formules">Formules</a>
-        <a href="/contact">Contact</a>
+        <a id="home" href="/">Accueil</a>
+        <a className="formule" href="/formules">Formules</a>
+        <a className="contact" href="/contact">Contact</a>
       </nav>
     </header>
   );
