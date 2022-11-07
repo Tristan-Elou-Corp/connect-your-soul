@@ -10,15 +10,24 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import EmailBox from "../components/EmailBox";
 
 function Contact() {
+  const handleResize = () => {
+    if (window.innerWidth < 768) {
+      window.location.reload();
+    }
+  }
+
+  window.addEventListener('resize', handleResize);
   return (
     <React.Fragment>
       <Header />
       <div className="contact-wrapper">
-        <div className="contact-wrapper__journey__block">
-          <a href="/contact">
-            <img src={journey} alt="journey"/>
-          </a>
-        </div>
+        { window.innerWidth <= 768 &&
+          <div className="contact-wrapper__journey__block">
+            <a href="/contact">
+              <img src={journey} alt="journey"/>
+            </a>
+          </div>
+        }
         <div className="contact-wrapper__text-trust">
           <span className="contact-wrapper__text-trust__span">
             ils ont fait confiance à mon accompagnement personnel
