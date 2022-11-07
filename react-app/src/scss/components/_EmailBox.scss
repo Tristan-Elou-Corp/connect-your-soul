@@ -1,3 +1,8 @@
+.emailbox-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .emailbox-title {
   font-size: 20px;
   color: #1D4851;
@@ -8,4 +13,12 @@
   font-size: 20px;
   color: rgb(226, 183, 174);
   font-family: "Poppins"
+}
+
+.button-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
