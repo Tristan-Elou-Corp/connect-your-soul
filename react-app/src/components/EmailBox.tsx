@@ -2,6 +2,15 @@ import React from "react";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import emailjs from '@emailjs/browser';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#1d4851',
+    },
+  },
+});
 
 function EmailBox() {
   const [email, setEmail] = React.useState('');
@@ -31,7 +40,7 @@ function EmailBox() {
   };
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="emailbox-wrapper">
       <h2 className="emailbox-title">Vous souhaitez bénéficier de mon accompagnement ? Envoyer moi un mail ci-dessous ou à cette adresse : </h2>
       <p className="emailbox-title-mail">contact@connect-your-soul.com</p>
       <TextField
@@ -50,7 +59,11 @@ function EmailBox() {
           rows={4}
           onChange={handleChangeContent}
       />
-      <Button variant="contained" fullWidth color="primary" onClick={() => handleSend()} size="small" >Envoyer</Button>
+      <div className="button-div">
+        <ThemeProvider theme={theme}>
+          <Button variant="contained" color="primary" onClick={() => handleSend()} size="small" >Envoyer</Button>
+        </ThemeProvider>
+      </div>
     </div>
   );
 }
