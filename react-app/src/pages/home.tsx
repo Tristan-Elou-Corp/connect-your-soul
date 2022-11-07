@@ -11,6 +11,7 @@ import journey from "../assets/letsstartyourjourney.webp";
 import stairs from "../assets/stairs.webp";
 import TextBox from "../components/TextBox";
 import EmailIcon from '@mui/icons-material/Email';
+import EmailBox from "../components/EmailBox";
 
 const theme = createTheme({
   palette: {
@@ -97,9 +98,10 @@ function Home() {
         </p>
         <p className="home-wrapper__citation--normal">
           <span className="home-wrapper__citation--normal__text">
-          Tout notre questionnement repose sur le sens même du mot « existence » :
+            Tout notre questionnement repose sur le sens même du mot « existence » :
           </span>
         </p>
+
         <div className="home-wrapper__citation--background">
           <h2 className="home-wrapper__citation--background__title_block">
             <span className="home-wrapper__citation--background__title_block__title">
@@ -139,34 +141,28 @@ function Home() {
             </span>
           </p>
           <div className="home-wrapper__bottom__formula">
-            <div className="home-wrapper__bottom__formula__block">
-              <a href="/">
-                <img src={stairs} alt="stairs"/>
-              </a>
+            <div>
+              <div className="home-wrapper__bottom__formula__block1">
+                <a href="/formules">
+                  <img src={stairs} alt="stairs"/>
+                </a>
+              </div>
+              <ThemeProvider theme={theme}>
+                <Button fullWidth variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small">Mes formules et Accompagnements</Button>
+              </ThemeProvider>
             </div>
-            <ThemeProvider theme={theme}>
-              <Button fullWidth variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small">Mes formules et Accompagnements</Button>
-            </ThemeProvider>
-            <div className="home-wrapper__bottom__formula__block">
-              <a href="/contact">
-                <img src={journey} alt="journey"/>
-              </a>
-            </div>
-            <ThemeProvider theme={theme}>
-              <Button fullWidth variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small" >Ils m'ont fait confiance</Button>
-            </ThemeProvider>
-            <div className="home-wrapper__bottom__formula__block">
-              <a href="/">
-                <img src={stairs} alt="stairs"/>
-              </a>
+            <div>
+              <div className="home-wrapper__bottom__formula__block2">
+                <a href="/contact">
+                  <img src={journey} alt="journey"/>
+                </a>
+              </div>
+              <ThemeProvider theme={theme}>
+                <Button fullWidth variant="contained" color="primary" onClick={() => window.location.href="/formules"} size="small" >Ils m'ont fait confiance</Button>
+              </ThemeProvider>
             </div>
           </div>
-          <ThemeProvider theme={theme}>
-            <Button id="email-button" fullWidth variant="contained" color="primary" onClick={() => window.location.href="/contact"} size="small" >
-              <EmailIcon />
-              Email
-            </Button>
-          </ThemeProvider>
+          <EmailBox />
         </section>
         <Footer />
     </div>
