@@ -1,17 +1,21 @@
 import React from "react";
 import ImageSwitcher from "../components/ImageSwitcher";
+
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 
 function Formules() {
+  
+
   return (
     <React.Fragment>
       <Header />
       <div className="formules-wrapper">
         <div className="formules-wrapper__imageSwitcher">
           <ImageSwitcher />
+          
         </div>
         <Box
           sx={{
