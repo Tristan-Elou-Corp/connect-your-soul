@@ -59,15 +59,15 @@ function ImageSwitcher() {
   }
 
   return (
-    <div className="switcher__block" >
-      <div>
-        <img src={image} alt="img" style={{ width: "100%" }}/>
+    <div className="switcher-wrapper" >
+      <div className="switcher-wrapper__img-wrapper">
+        <img className="switcher-wrapper__img-wrapper__image" src={image} alt="img" />
       </div>
-      <div>
+      <div className="switcher-wrapper__button-wrapper">
         <IconButton aria-label="ArrowBack" onClick={handlePrevious} >
           <ArrowBackIosNewIcon />
-        </IconButton>
-        <IconButton aria-label="ArrowForward" onClick={handleNext} style={{ float: "right" }} >
+        </IconButton >
+        <IconButton sx={{ float: "right" }} aria-label="ArrowForward" onClick={handleNext} >
           <ArrowForwardIosIcon />
         </IconButton>
       </div>
